@@ -460,6 +460,9 @@ $(document).ready(function(){
 
 	
 });
+function confirmaciones() {
+    window.open("https://docs.google.com/spreadsheets/d/1KFW_1vi4KKqBXMbvYfz3sRVKZ03RBrOXMs06YVhboTI/edit?usp=sharing");        
+}
 function personas1() {
     window.open("pases/inicio1.html", "_self");        
 }
@@ -486,6 +489,15 @@ function personas8() {
 }
 function personas9() {
     window.open("pases/inicio9.html", "_self");        
+}
+function personas10() {
+    window.open("pases/inicio10.html", "_self");        
+}
+function personas11() {
+    window.open("pases/inicio11.html", "_self");        
+}
+function personas12() {
+    window.open("pases/inicio12.html", "_self");        
 }
 
  function copiar1(){
@@ -602,6 +614,48 @@ function personas9() {
 }
  function copiar9(){
   var origen = document.getElementById('target9');
+  var destino = document.getElementById('target10');
+  var copyFrom = document.createElement("textarea");
+  copyFrom.textContent = origen.value;
+  var body = document.getElementsByTagName('body')[0];
+  body.appendChild(copyFrom);
+  copyFrom.select();
+  document.execCommand('copy');
+  alert("Copiado al portapapeles!");
+  body.removeChild(copyFrom);
+  destino.focus();
+  document.execCommand('paste');
+}
+ function copiar10(){
+  var origen = document.getElementById('target10');
+  var destino = document.getElementById('target10');
+  var copyFrom = document.createElement("textarea");
+  copyFrom.textContent = origen.value;
+  var body = document.getElementsByTagName('body')[0];
+  body.appendChild(copyFrom);
+  copyFrom.select();
+  document.execCommand('copy');
+  alert("Copiado al portapapeles!");
+  body.removeChild(copyFrom);
+  destino.focus();
+  document.execCommand('paste');
+}
+ function copiar11(){
+  var origen = document.getElementById('target11');
+  var destino = document.getElementById('target10');
+  var copyFrom = document.createElement("textarea");
+  copyFrom.textContent = origen.value;
+  var body = document.getElementsByTagName('body')[0];
+  body.appendChild(copyFrom);
+  copyFrom.select();
+  document.execCommand('copy');
+  alert("Copiado al portapapeles!");
+  body.removeChild(copyFrom);
+  destino.focus();
+  document.execCommand('paste');
+}
+ function copiar12(){
+  var origen = document.getElementById('target12');
   var destino = document.getElementById('target10');
   var copyFrom = document.createElement("textarea");
   copyFrom.textContent = origen.value;
